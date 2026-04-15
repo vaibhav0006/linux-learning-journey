@@ -1,0 +1,188 @@
+Qus – 1 What is UNICS (UNIX)?
+UNIX is a multiuser, multitasking operating system designed to provide a powerful and secure environment for managing hardware resources and running applications.
+It is developed in the 1970s at Bell Labs.
+UNICS  - Uniplexed Information and Computing Service.
+
+
+Qus – 2 What is LINUX?
+Linux is an open-source, Unix-like operating system kernel that acts as an interface between computer hardware and software.  
+Linux is an open-source kernel; when combined with GNU utilities, it forms a complete operating system known as GNU/Linux.
+GNU is a free software project that provides tools and utilities used with the Linux kernel to create a complete operating system.
+Linux + GNU = Linux based OS
+It is known for security and flexibility.
+Created by Linus Torvald in 1991.
+Inspired by UNIX & MINIX Operating Systems.
+Linux = Linus + Unix. 
+
+
+Qus – 3 What are some differences between LINUX and UNIX?
+Linux is open source which means source code is publicly available and can be modified and distributed but UNIX is licensed or propertied.
+Linux is inspired by UNIX and is designed to be UNIX-like. It follows many of the same principles and standards, making it compatible with UNIX software and commands.
+
+
+Qus – 4 What is LINUX Distributions (Distros, Flavors)?
+UNIX - UNIX refers to operating systems derived from the original UNIX or certified as UNIX-compliant.
+1.	AIX – IBM’s UNIX for enterprise servers
+2.	HP-UX – Hewlett-Packard UNIX
+3.	Solaris – Oracle UNIX system
+4.	FreeBSD – Open-source UNIX-like OS (not certified UNIX but very close)
+5.	MacOS - UNIX-based (derived from BSD UNIX)
+LINUX - Linux distributions are operating systems built on the Linux kernel.
+1.	Ubuntu  - Desktop
+2.	Red Hat Enterprise Linux (RHEL) / CentOS  - Server
+3.	Kali Linux - Security
+4.	Fedora  - Development
+5.	Debian - Stability
+6.	Android
+Android is based on the Linux kernel, but it is not a traditional Linux distribution because it does not use GNU utilities and has a completely different user space.
+
+Linux distro = Linux kernel + GNU tools + package manager
+Android = Linux kernel + Android runtime + Java/Kotlin apps
+
+
+Qus – 5 What are some features of Linux?
+1.	Open Source
+2.	Multiuser – Multiple User can access system resources simultaneously.
+3.	Multitasking – Can run multiple tasks simultaneously.
+4.	Security – Strong Security features and regular updates.
+5.	Portability – Can be run on various hardware platforms.
+
+Qus – 6 What is centOS?
+CentOS (Community Enterprise Operating System) is a Linux distribution built from the same source code as Red Hat Enterprise Linux (RHEL). It provides an enterprise-grade, stable, and secure operating system for free, which is why it became very popular in servers and data centers.      
+RHEL → CentOS → CentOS Stream → Rocky Linux/AlmaLinux
+
+
+Qus – 7 What is virtualization?
+Virtualization is a process that allows multiple virtual computers to run on one physical computer using a software layer called a hypervisor.
+Hypervisor: Software that creates and manages virtual machines
+Examples: VMware, Virtual Box, KVM, Hyper-V
+Real-world needs and uses
+1. Server consolidation (Cost saving)
+	Companies earlier needed: 10 physical servers for 10 applications
+	With virtualization:1 powerful server can run 10 virtual machines
+	Saves hardware cost, electricity, and maintenance
+2. Testing and development environments
+	Developers and system administrators: Test software on multiple operating 	systems (Linux, Windows, etc.)
+	Create temporary test environments without buying new hardware
+3. Cloud computing foundation
+	Cloud providers like AWS, Azure, and GCP run: Thousands of virtual machines 	on large physical servers
+	Users rent virtual servers instead of buying physical machines.
+4. Disaster recovery and backup
+	Virtual machines can: Be copied, backed up, and restored quickly
+	Moved to another physical server if hardware fails
+Types of Hypervisors 
+1. Type-1 (Bare-metal):
+Runs directly on hardware. Used in servers and cloud.
+Examples: VMware ESXi, Microsoft Hyper-V, KVM
+2. Type-2 (Hosted):
+Runs on top of an operating system. Used for testing and learning.
+Examples: Oracle VM VirtualBox, VMware Workstation
+
+
+Qus – 8 Explain some terminology of OS?
+Shell 
+Shell is a program that acts as a bridge between user and the operating system.
+A shell is a program that lets users interact with the OS using commands.
+👉 You talk to the computer
+👉 Shell understands your commands
+👉 Shell tells the OS (kernel) what to do
+Think of it like a translator.
+A shell provides a command-line interface (CLI), whereas GUI is implemented by separate graphical components, not by the shell.
+Shell is the outermost layer of the Operating System and handles user interaction.
+Zsh(Z shell), Bash(Bourne again shell), sh(Bourne shell), CMD(Command Prompt), and PowerShell are command-line shells used to interact with the operating system.
+Firmware
+Firmware is software that is permanently (or semi-permanently) stored in hardware and controls how that hardware works.
+Firmware provide basic control and functionality to hardware.
+Example – BIOS, Router firmware, Printer firmware, Washing machine controller.
+Drivers
+A driver is a program inside the kernel that allows the OS to communicate with  hardware.
+Kernel
+Heart of an Operating System and Very first part of OS to load on start-up.
+A kernel is the core part of an operating system. It acts as a bridge between software applications and the hardware of a computer.
+The kernel manages system resources, such as the CPU, memory and devices, ensuring everything works together smoothly and efficiently.
+System Calls
+User programs cannot directly access hardware or critical OS resources because it would make the system unstable and insecure. To maintain safety, the operating system provides system calls — controlled interfaces that allow user programs to request services from the kernel. These calls act as a gateway between user mode and kernel mode. 
+System call is a request made by the user program to the operating system, in order to get any kind of service.
+printf (“hello world”) internally calls write() system call, in order to communicate with monitor.
+
+
+Qus – 9 What are different ways to access Linux server remotely?
+1.	Using MobaXterm
+MobaXterm is a Windows tool that provides a Linux-like terminal and remote access (SSH, RDP, SFTP).
+It lets you connect to servers and transfer files easily through a graphical interface.
+
+2.	Using PuTTY Terminal
+PuTTY is a free terminal emulator and SSH client used mainly on Windows to remotely connect to other computers (especially Linux/Unix servers).
+PuTTY connection setup is GUI but Terminal opened after login is CLI.
+3.	Using Window CMD
+SSH (Secure Shell) is a network protocol used to remotely log in to another system and execute commands over an encrypted connection. default port is 22.
+ssh username@ip
+
+
+Qus – 10 Explain all about SSH?
+SSH or Secure Shell is a network communication protocol used to access and manage systems remotely over an encrypted connection.
+Example of SSH    
+•	Access Linux server using Putty
+•	Access a Linux server from another server
+Why it is called as secure shell?
+Because communication between host and client will be in encrypted format.
+More about SSH
+•	The default port for SSH client connections is 22
+•	We can change the default port and use one between 1024 and 32,767
+•	SSH is also a command in Linux
+•	It is used to access an another Linux server or accessing a Linux server from a terminal.
+•	Syntax: ssh username@host(IP/Domain_name)
+How to use SSH?
+To use SSH, ssh service must be installed on Linux server
+You can check using
+rpm -qa | grep ssh, or
+check the file    /etc/ssh/sshd_config
+If not already installed then install below two
+install openssh-clients openssh-server
+And now enable the ssh or check if it is enabled using
+systemctl status sshd
+
+
+Qus – 11 How to access remote server without password?
+There are two ways to access the remote server
+1.	Using password
+2.	Without password (by passing the SSH key)
+If you frequently access the server then its good idea to configure your ssh keys so that you can login without password
+Follow the steps below
+1.	Generate A New SSH Key Pair on Local Machine.
+2.	Copy Public Key to Remote Machine.
+3.	Login to Remote Server without password
+It is a 3 step process - 
+Step1: Generate an SSH key using
+	ssh-keygen
+You can check the generated keys using
+Is -l .ssh
+cat ~/.ssh/id_rsa.pub
+Step2: Copy your public SSH key to remote server, (on remote server it is copied under ~/.ssh/authorizedkeys file)
+ssh-copy-id username@ip
+
+
+Qus – 12 What is WinSCP?
+WinSCP is a free and open-source file transfer software for Windows.
+It is mainly used to transfer files between your local Windows computer and a remote Linux/Unix server securely.
+WinSCP supports protocols like SFTP, SCP, FTP
+You can use WinSCP to:
+•	Upload files from Windows → Linux
+•	Download files from Linux → Windows
+•	Edit server files directly.
+•	Manage files using a graphical interface (like File Explorer)
+
+
+Qus – 13 How to transfer file remotely between Linux servers ?
+SCP (Secure Copy Protocol) is a command-line tool used for securely transferring files between a local and a remote host, or between two remote hosts, using SSH for encryption and authentication.
+Syntax:
+scp [options] source destination
+Copy file from local → remote
+scp file.txt user@remote_ip:/home/user
+Copy file from remote → local
+scp user@remote_ip:/home/user/file.txt .
+Copy directory (recursive)
+scp -r folder/ user@remote_ip:/path/
+
+
+		
