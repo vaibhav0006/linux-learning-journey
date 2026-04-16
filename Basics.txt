@@ -177,12 +177,12 @@ Qus – 13 How to transfer file remotely between Linux servers ?
 SCP (Secure Copy Protocol) is a command-line tool used for securely transferring files between a local and a remote host, or between two remote hosts, using SSH for encryption and authentication.
 Syntax:
 scp [options] source destination
+
 Copy file from local → remote
 scp file.txt user@remote_ip:/home/user
+
 Copy file from remote → local
 scp user@remote_ip:/home/user/file.txt .
+
 Copy directory (recursive)
 scp -r folder/ user@remote_ip:/path/
-
-
-		
