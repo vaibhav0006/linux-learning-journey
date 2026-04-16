@@ -152,12 +152,14 @@ Follow the steps below
 1.	Generate A New SSH Key Pair on Local Machine.
 2.	Copy Public Key to Remote Machine.
 3.	Login to Remote Server without password
+
 It is a 3 step process - 
 Step1: Generate an SSH key using
 	ssh-keygen
 You can check the generated keys using
 Is -l .ssh
 cat ~/.ssh/id_rsa.pub
+
 Step2: Copy your public SSH key to remote server, (on remote server it is copied under ~/.ssh/authorizedkeys file)
 ssh-copy-id username@ip
 
@@ -175,14 +177,15 @@ You can use WinSCP to:
 
 Qus – 13 How to transfer file remotely between Linux servers ?
 SCP (Secure Copy Protocol) is a command-line tool used for securely transferring files between a local and a remote host, or between two remote hosts, using SSH for encryption and authentication.
+
 Syntax:
 scp [options] source destination
+
 Copy file from local → remote
 scp file.txt user@remote_ip:/home/user
+
 Copy file from remote → local
 scp user@remote_ip:/home/user/file.txt .
+
 Copy directory (recursive)
-scp -r folder/ user@remote_ip:/path/
-
-
-		
+scp -r folder/ user@remote_ip:/path/	
