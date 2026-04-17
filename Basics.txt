@@ -114,6 +114,7 @@ It lets you connect to servers and transfer files easily through a graphical int
 2.	Using PuTTY Terminal
 PuTTY is a free terminal emulator and SSH client used mainly on Windows to remotely connect to other computers (especially Linux/Unix servers).
 PuTTY connection setup is GUI but Terminal opened after login is CLI.
+
 3.	Using Window CMD
 SSH (Secure Shell) is a network protocol used to remotely log in to another system and execute commands over an encrypted connection. default port is 22.
 ssh username@ip
@@ -188,4 +189,4 @@ Copy file from remote → local
 scp user@remote_ip:/home/user/file.txt .
 
 Copy directory (recursive)
-scp -r folder/ user@remote_ip:/path/vinit
+scp -r folder/ user@remote_ip:/path/
