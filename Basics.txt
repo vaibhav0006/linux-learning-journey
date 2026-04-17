@@ -186,4 +186,4 @@ Copy file from remote → local
 scp user@remote_ip:/home/user/file.txt .
 
 Copy directory (recursive)
-scp -r folder/ user@remote_ip:/path/
+scp -r folder/ user@remote_ip:/path/vaibhav
